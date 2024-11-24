@@ -1,0 +1,139 @@
+* {
+  font-family: "Rubik", sans-serif;
+}
+
+body {
+  background-image: linear-gradient(
+    to right,
+    rgb(185, 43, 39),
+    rgb(21, 101, 192)
+  );
+  color: #fff;
+}
+
+.box {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 15px;
+  border-radius: 20px;
+}
+
+fieldset {
+  border: 3px solid #d72323;
+}
+
+legend {
+  border: 1px solid #d72323;
+  padding: 10px;
+  text-align: center;
+  background-color: #d72323;
+  border-radius: 15%;
+  margin-bottom: 0.5rem;
+}
+
+.inputBox {
+  position: relative;
+}
+
+.inputUser {
+  background: none;
+  border: none;
+  border-bottom: 1px solid white;
+  outline: none;
+  color: #fff;
+  font-size: 15px;
+  width: 100%;
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+}
+
+.labelInput {
+  position: absolute;
+  top: -23px;
+  left: 0px;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.inputUser:focus ~ .labelInput {
+  top: -28px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #d72323;
+}
+
+input[type="radio"] {
+  margin-bottom: 1rem;
+}
+
+input[type="date"] {
+  text-transform: uppercase;
+  margin-top: 1rem;
+  background: none;
+  border: none;
+  border-bottom: 1px solid white;
+  outline: none;
+  color: #fff;
+  font-size: 15px;
+  width: 100%;
+  letter-spacing: 2px;
+}
+
+input[type="date"]:hover {
+  cursor: pointer;
+  color: #d72323;
+}
+
+input[type="submit"] {
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+  font-weight: 700;
+  transition: all 0.2s;
+  padding: 10px 20px;
+  border-radius: 100px;
+  background: #d72323;
+  border: 1px solid transparent;
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  color: #fff;
+}
+
+input[type="submit"]:hover {
+  background: black;
+  color: #fff;
+  font-size: 17px;
+}
+
+button > svg {
+  width: 34px;
+  margin-left: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+input[type="submit"]:hover svg {
+  transform: translateX(5px);
+}
+
+input[type="submit"]:active {
+  transform: scale(0.95);
+}
+
+p a {
+  outline: none;
+  text-decoration: none;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  margin: 1.5rem;
+  font-size: 17px;
+}
+
+p a:hover {
+  color: #d72310;
+  font-size: 19px;
+}

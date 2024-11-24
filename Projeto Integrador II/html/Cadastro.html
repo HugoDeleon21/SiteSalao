@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro | Salão Bahia</title>
+    <link rel="stylesheet" href="../css/cadastro.css" />
+  </head>
+  <body>
+    <div class="box">
+      <form action="../cadastra.php" method="post">
+        <fieldset>
+          <legend><b>Preencha o formulário</b></legend>
+          <br />
+          <div class="inputBox">
+            <input
+              type="text" name="nome" id="nome" class="inputUser" required />
+            <label for="nome" class="labelInput">Nome completo</label>
+          </div>
+          <br />
+          <div class="inputBox">
+            <input type="email" name="email" id="email" class="inputUser" required />
+            <label for="email" class="labelInput">E-mail</label>
+          </div>
+          <br />
+          <div class="inputBox">
+            <input
+              type="tel" name="telefone" id="telefone" class="inputUser" required />
+            <label for="telefone" class="labelInput">Telefone</label>
+          </div>
+          <br />
+          <div class="inputBox">
+            <input type="password" name="senha" id="password" class="inputUser" required />
+            <label for="password" class="labelInput">Crie sua senha</label>
+          </div>
+          <p>Sexo:</p>
+          <input type="radio" name="genero" id="feminino" value="F" required />
+          <label for="feminino">Feminino</label><br />
+          <input type="radio" name="genero" id="masculino" value="M" required />
+          <label for="masculino">Masculino</label><br />
+          <input type="radio" name="genero" id="outro" value="O" required />
+          <label for="outro">Outro</label><br />
+          <label for="data_nascimento"><b>Data de nascimento:</b></label>
+          <input type="date" name="data_nascimento" id="data_nascimento" required />
+          <br /><br />
+          <input type="submit" name="submit" id="submit" />
+          <p><a href="/index.html">Voltar</a></p>
+        </fieldset>
+      </form>
+    </div>
+  </body>
+</html>

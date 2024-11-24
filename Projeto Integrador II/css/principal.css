@@ -1,0 +1,297 @@
+:root {
+  --main-color: #d72323;
+  --black: #13131a;
+  --bg: #010103;
+  --border: 0.1rem solid rgba(255, 255, 255, 0.3);
+  font-size: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: 0.2 linear;
+  font-family: "Rubik", sans-serif;
+}
+
+body {
+  background-color: var(--bg);
+}
+
+.header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 99;
+  border-bottom: var(--border);
+  background-color: #010103;
+}
+
+#logout-button {
+  background-color: #d72323;
+  color: #fff;
+  font-size: 12px;
+  border-radius: 20px;
+  padding: 10px;
+  margin-left: 50px;
+}
+
+#logout-button:hover {
+  background-color: #990000;
+  font-size: 14px;
+}
+
+section {
+  padding: 3rem 2rem;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.header section {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.navbar a {
+  margin: 0 1rem;
+  font-size: 1.8rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  color: var(--main-color);
+  padding-bottom: 0.5rem;
+  font-size: 2rem;
+}
+
+.home-container {
+  margin-top: 80px;
+  background: url("../images/PlanodefundoSalao.jpg");
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+}
+
+.content {
+  max-width: 60rem;
+}
+
+.content h3 {
+  color: #d72323;
+  font-size: 6rem;
+}
+
+.content p {
+  color: #3d6cb9;
+  font-size: 2rem;
+  font-weight: 50;
+  line-height: 1.8;
+  padding: 1rem 0;
+}
+
+.title {
+  font-size: 4.5rem;
+  color: var(--main-color);
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+.title span {
+  color: #3d6cb9;
+  text-transform: uppercase;
+}
+
+.sobre .row {
+  display: flex;
+  align-items: center;
+  background-color: var(--black);
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.sobre .container-image {
+  flex: 1;
+  max-width: 50%;
+}
+
+.sobre .container-image img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.sobre .row .content {
+  flex: 1;
+  padding: 2rem;
+}
+
+.sobre .row .content h3 {
+  font-size: 3rem;
+  color: #fff;
+}
+
+.sobre .row .content p {
+  font-size: 1.6rem;
+  color: #fff;
+  padding: 1rem 0;
+  line-height: 1.8;
+}
+
+.box-container {
+  justify-content: space-around;
+  display: flex;
+}
+
+.box-container img {
+  border-radius: 10cm;
+  height: 170px;
+  margin-left: 3rem;
+}
+
+.box-container h5 {
+  color: #fff;
+  font-size: 2rem;
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+  margin-left: 4.8rem;
+}
+
+.box-container h3 {
+  color: #fff;
+  font-size: 4rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-left: 1px;
+}
+
+.info {
+  background-color: #3d6cb9;
+  height: 50px;
+  width: 80px;
+  border-radius: 20px;
+  margin-left: 7.4rem;
+  font-size: 13px;
+  color: #fff;
+}
+
+.info:hover {
+  background-color: #d72323;
+  font-size: 15px;
+}
+
+.modal {
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(1.1);
+  transition: visibility 0.25s ease-in-out, opacity 0.25s ease-in-out,
+    transform 0.25s ease-in-out;
+  font-size: 15px;
+}
+
+.modal-content {
+  background-color: var(--black);
+  color: #fff;
+  padding: 24px;
+  width: 80%;
+  max-width: 500px;
+  border-radius: 8px;
+}
+
+#modalimg {
+  width: 200px;
+  height: 190px;
+}
+
+.close-button {
+  float: right;
+  width: 24px;
+  line-height: 24px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  background-color: red;
+}
+.close-button:hover {
+  background-color: darkgray;
+}
+
+.show-modal {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+}
+
+#planes {
+  color: #fff;
+  display: flex;
+  font-size: 5rem;
+  display: flex;
+}
+
+#planes img {
+  height: 25rem;
+  width: 20rem;
+  margin: 2rem;
+  border-radius: 45px;
+}
+
+#planes h4 {
+  margin-top: 5rem;
+  margin-left: 2rem;
+  font-size: 3.5rem;
+}
+
+#endereco {
+  display: flex;
+  justify-content: center;
+}
+
+#horas {
+  display: flex;
+  color: #fff;
+  font-size: 3rem;
+}
+
+.footer {
+  text-align: center;
+}
+
+.footer .share {
+  padding: 0.5rem 0;
+}
+
+.footer .share img {
+  margin: 0.3rem;
+  cursor: pointer;
+  border-radius: 25%;
+  padding: 1rem;
+}
+
+.footer .share img:hover {
+  height: 90px;
+  width: 90px;
+}
+
+#agendar {
+  color: #fff;
+  font-size: 3.5rem;
+}
